@@ -31,9 +31,10 @@ print("Predicted values for the test set:")
 print(y_pred)
 print("Actual values for the test set:")
 print(y_test)
+
+
 # Visualizing both Training and Test set results side by side
 fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-
 # Training set
 axes[0].scatter(x_train, y_train, color='red')
 axes[0].plot(x_train, regressor.predict(x_train), color='blue')
